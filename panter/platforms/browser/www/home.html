@@ -1,0 +1,78 @@
+<ons-page id="homePage">
+    <ons-toolbar>
+        <div class="left">
+            <!-- Toolbar-button with different icons depending on the platform. -->
+            <ons-toolbar-button id="menubtn">
+                <ons-icon icon="ion-navicon, material:md-menu" size="32px, material:24px"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+        <div class="center">Food 247</div>
+        <div class="right">
+            <ons-toolbar-button>
+                <ons-icon icon="fa-user-circle"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+    </ons-toolbar>
+    <p style="text-align: center; margin-top: 70px; margin-bottom: 10px;">
+        <ons-search-input placeholder="Food or Restuarant">
+        </ons-search-input>
+    </p>
+
+    <div class="content" style="text-align: center;">
+        <div class="recomended">
+            <h4>Recomended</h4>
+            <ons-carousel auto-scroll auto-scroll-ratio="0.5" auto-refresh swipeable overscrollable item-width="130px"
+                class="recomended_list" id="carousel">
+                <ons-carousel-item modifier="nodivider" id="item1" class="recomended_item">
+                  
+                </ons-carousel-item>                
+            </ons-carousel>
+        </div>
+        <div class="category_content">
+            <ons-row>
+                <ons-col>
+                  <ons-card id="An">
+                    <div class="title"><img src="/images/anti.png" width="80" height="80"></div>
+                    <div>Auntie Anne</div>
+                  </ons-card>
+                </ons-col>
+                <ons-col>
+                  <ons-card onclick="fn.pushPage({'id': 'mrdonut.html', 'title': 'PullHook'})">
+                    <div class="title"><img src="/images/mr.png" width="80" height="80"></div>
+                    <div>Mr donut</div>
+                  </ons-card>
+                </ons-col>
+              </ons-row>
+              <ons-row>
+                <ons-col>
+                  <ons-card onclick="fn.pushPage({'id': 'mrbun.html', 'title': 'PullHook'})">
+                    <div class="title"><img src="/images/mr.bun_.png" width="80" height="80"></div>
+                    <div>Mr bun</div>
+                  </ons-card>
+                </ons-col>
+                <ons-col>
+                  <ons-card onclick="fn.pushPage({'id': 'donut.html', 'title': 'PullHook'})">
+                    <div class="title"><img src="/images/dunkin-donuts-logo-png-transparent.png" width="80" height="80"></div>
+                    <div>Dunkin Donuts</div>
+                  </ons-card>
+                </ons-col>
+              </ons-row>
+              <ons-row>
+                <ons-col>
+                  <ons-card onclick="fn.pushPage({'id': 'dairy.html', 'title': 'PullHook'})">
+                    <div class="title"><img src="/images/20190213030003_459.png" width="80" height="60"></div>
+                    <div>Dairy Queen</div>
+                  </ons-card>
+                </ons-col>
+                <ons-col>
+                  <ons-card onclick="fn.pushPage({'id': 'amazon.html', 'title': 'PullHook'})">
+                    <div class="title"><img src="/images/aaa.png" width="80" height="60"></div>
+                    <div>Amazon</div>
+                  </ons-card>
+                </ons-col>
+              </ons-row>
+              
+        </div>
+    
+      
+</ons-page>

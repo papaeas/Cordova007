@@ -1,0 +1,40 @@
+<ons-page id="addressPage">
+
+    <ons-toolbar style="background-color: yellow;">
+      <div class="left">
+        <!-- Toolbar-button with different icons depending on the platform. -->
+        <div class="left"><i class="fas fa-angle-left icon" id="back"></i></div>
+  
+        </ons-toolbar-button>
+      </div>
+      <div class="center">FOOD panter</div>
+      <div class="right ">
+        <ons-toolbar-button>
+          <ons-icon icon="fa-user-circle" id="Backhome"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+  
+    </ons-toolbar>
+  
+    <div id="map" style="position:absolute; top:0; bottom:0; width:100%;"></div>
+    <pre id='coordinates' class='coordinates' style="background: rgba(0,0,0,0.5);
+        color: #fff;
+        position: absolute;
+        bottom: 40px;
+        left: 10px;
+        padding:5px 10px;
+        margin: 0;
+        font-size: 11px;
+        line-height: 18px;
+        border-radius: 3px;
+        display: none;"></pre>
+  
+  <ons-fab position="bottom right" id="setAdd">
+    <ons-icon
+      icon="md-plus">
+    </ons-icon>
+  </ons-fab>
+  
+  
+  
+  </ons-page>
